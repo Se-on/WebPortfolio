@@ -1,0 +1,74 @@
+*{scroll-behavior: smooth; 
+  margin: 0; 
+  padding: 0;}
+*::selection{background-color:var(--mainBlack); color:goldenrod;}
+
+:root{
+  --mainColor: #7974D8;
+  --mainBlack: #222222;
+  --mainWhite: #ffffff;
+}
+
+html{ 
+font-family: "Stick No Bills", sans-serif,
+  "Roboto Condensed", sans-serif,
+  "Gothic A1", sans-serif,
+  "M PLUS 1", sans-serif,
+  "WindSong", cursive,
+  bootstrap-icons;
+font-optical-sizing: auto;
+letter-spacing: -1px;
+list-style: none;
+list-style-type: none;
+color: var(--mainBlack);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+font-style: normal;
+text-decoration: none;}
+
+img{
+margin: 0;
+padding: 0;
+}
+
+a.homepage{
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid var(--mainColor);
+  border-radius: 3px;
+  background-color: var(--mainWhite);
+  color: var(--mainColor);
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+a.homepage:hover{
+  background-color: goldenrod;
+  color: var(--mainWhite);
+}
+
+a.github{
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid var(--mainColor);
+  border-radius: 3px;
+  background-color: var(--mainColor);
+  color: var(--mainWhite);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a.github:hover{
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+}
