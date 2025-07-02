@@ -29,7 +29,7 @@
 /* 둥둥 뜨는 */
 @keyframes float-img {
   0% {
-    transform: translateY(40);
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(-20px);

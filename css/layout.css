@@ -43,17 +43,21 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 .fp-arrow.fp-prev{
   border-color: transparent var(--mainColor) transparent transparent; 
-  left: 15%; translate: 0.5s;
+  left: 15%; transition: 0.5s;
 }
 .fp-arrow.fp-next{
   border-color: transparent transparent transparent var(--mainColor); 
-  right: 15%; translate: 0.5s;
+  right: 15%; transition: 0.5s;
 }
 .fp-arrow.fp-prev:hover{
   border-color: transparent var(--mainGold) transparent transparent ;
 }
 .fp-arrow.fp-next:hover{
   border-color: transparent transparent transparent var(--mainGold);
+}
+
+.design-gallery .swiper-button-white:hover{
+  color: var(--mainGold);
 }
 
 /* ------------------------------------------------------ 01 */
@@ -344,7 +348,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 }
 
 .design-container .skill-guide .skill-bar{
-  display: relative;
+  position: relative;
   width: 150px;
   height: 15px;
   margin: 10px 0px 20px 0px;
@@ -353,7 +357,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 }
 
 .design-container .skill-guide .skill-bar .skill-per{
-  display: absolute;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 0px;
