@@ -1,7 +1,7 @@
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 768px){
 
   main{
-    max-width: 1080px;
+    max-width: 768px;
     width: 100%;
     height: 1000px;
   }
@@ -12,48 +12,57 @@
 
   #sect2{
     background: none;
-    max-width: 1080px;
+    max-width: 768px;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 30px;
   }
 
   #sect2 .sect2-main h1{
-    font-size: 90px;
+    font-size: 76px;
     text-align: center;
   }
 
-  .sect2-main .profile-box{
-    margin: auto;
+  .profile-container .foundation a.homepage{padding: 5px 10px;}
+  #sect2 .sect2-main .profile .img-box, #sect2 .sect2-main .profile img, #sect2 .sect2-main .profile .img-box img{width: 200px; justify-content: center;}
+  #sect2 .profile-container .profile .img-box img{height: 305px;}
+  #sect2 .profile-container .profile div.img-box{height: 340px;}
+  #sect2 .profile-container .profile img{height:355px;}
+
+  
+  #sect2 .sect2-main .profile-box{
     width: 100%;
-    max-width: 1080px;
+    max-width: 768px;
     height: 100vh;
     background-color: var(--mainWhite);
     align-content: center;
   }
 
   .sect2-main .profile-container{
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: 200px 170px 280px auto;
     justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
+    gap: 30px;
     word-break: break-all;
   }
 
-  .profile-container .profile{
-    position: static;
+  .sect2-main .profile-container h4{
+    font-size: 16px;
   }
+
+  .sect2-main .profile-container p{font-size: 14px;}
+.profile-container .profile-sign h2{font-size: 26px; margin: 10px 0 0 0;}
+.profile-container .profile-sign h3{top: 12px; font-size: 26px;}
 
   #sect3{
     width: 100%;
-    max-width: 1080px;
+    max-width: 768px;
     height: 100vh;
   }
 
   #sect3 .sect3-main h1{
-    font-size: 90px;
+    font-size: 76px;
     text-align: center;
   }
 
@@ -75,12 +84,12 @@
   #sect4{
     background: none;
     width: 100%;
-    max-width: 1080px;
+    max-width: 768px;
     height: 100vh;
   }
 
   #sect4 .sect4-main h1{
-    font-size: 90px;
+    font-size: 76px;
   }
 
   .fp-arrow.fp-prev{border-color: transparent var(--mainGold) transparent transparent; left: 3%; top: 350px; transition: 0.5s;}
@@ -93,41 +102,49 @@
   #sect5{
     position: relative;
     width: 100%;
-    max-width: 1080px;
+    max-width: 768px;
     height: 100vh;
   }
 
+  
   #sect5 .sect5-main h1{
-    font-size: 90px;
+    font-size: 76px;
   }
 
+  #sect5 .sect5-main .kbo-proto .prototype iframe{width: 300px;}
+
+    #sect5 .sect5-main .kbo-proto .prototype-info, #sect5 .sect5-main .deosup img{width: 300px;}
+
+  #sect5 .sect5-main .kbo-proto .prototype-info, #sect5 .sect5-main .deosup .deosup-info{
+    margin-left: 20px; width: 255px;}
+
   #sect6{
-    max-width: 1080px;
+    max-width: 768px;
     width: 100%;
     height: 250px;
   }
   
 }
 
-@media screen and (max-width: 328px){
+@media screen and (max-width: 540px){
 
   main{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 1000px;
   }
 
   #sect1 .sect1-main img{
     width: 250px;
     height: auto;
-    left: 100px;
-    top: 150px;
+    top: 200px;
     animation: move 5s forwards infinite;
   }
 
   #sect1 h3{
-    left: 50px;
-    bottom: 80px;
+    left: 0;
+    width: 50%;
+    transform: translateX(-25%);
     font-size: 20px;
     text-align: center;
   }
@@ -139,7 +156,8 @@
 
   #sect2{
     background: none;
-    width: 328px;
+    max-width: 540px;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -149,34 +167,35 @@
     display: none;
   }
 
-  .sect2-main .profile-box{
-    margin: auto;
-    width: 328px;
+  #sect2 .sect2-main .profile-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 360px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+    #sect2 .sect2-main .profile-container .foundation,   #sect2 .sect2-main .profile-container .history{max-width: 510px; margin: 0; padding: 0;}
+
+  #sect2 .sect2-main .profile-box{
+    width: 510px;
     height: 100vh;
     background-color: var(--mainWhite);
     align-content: center;
   }
 
-  .sect2-main .profile-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    word-break: break-all;
-    margin: 30px;
-  }
-
-  .profile-container .profile{
+  #sect2 .profile-container .profile{
     display: none;
   }
 
-  .profile-container .foundation{
+  #sect2 .profile-container .foundation{
     text-align: left;
   }
 
   #sect3{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 100vh;
   }
 
@@ -185,33 +204,38 @@
     text-align: center;
   }
 
-  .design-container .skill-guide h3{
+  #sect3 .sect3-main .design-container .skill-guide{
+    width: 150px;
+  }
+
+  #sect3 .sect3-main .design-container .skill-guide h3{
   font-size: 16px;
   }
 
-  .design-container{
+  #sect3 .sect3-main .design-container{
     margin: 30px;
     display: flex;
     flex-direction: row;
     gap: 50px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-transform: capitalize;
   }
 
-  .design-container .skill-guide{
-    width: 150px;
+  #sect3 .sect3-main .design-gallery .swiper-container{
+    width: 100%;
+    max-width: 540px;
   }
 
   #sect4{
     background: none;
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 100vh;
   }
 
   #sect4 .sect4-main{
-    width: 328px;
+    width: 540px;
     margin: 30px;
   }
 
@@ -221,13 +245,13 @@
 
   #sect4 .sect4-main .web-container .web-img{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 300px;
   }
   
   #sect4 .sect4-main .web-container .web-img img{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 300px;
   }
 
@@ -238,7 +262,7 @@
 
   #sect4 .sect4-main .web-container .web-info .home-info{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     word-break: break-all;
     flex-direction: row;
   }
@@ -251,29 +275,37 @@
     padding: 10px 0px 5px 0px;
   }
 
+  #sect4 .sect4-main .web-container .web-info .home-info div a{
+    width: 110px;
+  }
   #sect4 .sect4-main .web-container .web-info h3{
-    word-break: break-all;
+    max-width: 320px;
+    word-break: keep-all;
     margin: 0 30px;
   }
+  #sect4 .sect4-main .web-container .web-info p{
+    max-width: 320px;
+    word-break: keep-all;
+    margin: 0 30px;
+  }
+
 
   #sect5{
     position: relative;
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 100vh;
   }
 
   #sect5 .sect5-main h1{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     font-size: 60px;
     line-height: 80%;
   }
 
   #sect5 .sect5-main .sect5-blur .mobile-container div{
-    width: 100%;
-    max-width: 328px;
-    height: 100vh;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,20 +313,20 @@
   }
 
   #sect5 .sect5-main .sect5-blur .mobile-container .prototype iframe{
-    width: 150px; height: 280px;
+    width: 300px; height: 300px;
   }
 
   #sect5 .sect5-main .deosup .deosup-info, #sect5 .sect5-main .kbo-proto .prototype-info{
-    width: 100%;
-    max-width: 100px;
-    height: 180px;
+    width: 300px;
+    height: 250px;
     word-break: break-all;
-    margin: 20px 0 0 0;
-    padding: 0;
+    margin: 10px 0;
+    padding: 2px;
   }
 
   #sect5 .sect5-main .deosup img{
-    height: 400px;
+    width: 180px;
+    height: 340px;
     border-radius: 5px;
   }
 
@@ -312,11 +344,14 @@
     flex-direction: row;
     margin: 10px 0 0 0;
     gap: 5px;
+    width: 270px;
+    line-height: 14px;
+    font-size: 14px;
   }
 
   #sect6{
     width: 100%;
-    max-width: 328px;
+    max-width: 540px;
     height: 250px;
     word-break: keep-all;
   }

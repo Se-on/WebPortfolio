@@ -114,7 +114,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
   position: relative;
   width: 1900px;
   height: 100vh;
-  background: url(../img/93072.png) no-repeat center/90%;
+  background: url(../img/93072.png) no-repeat center/90% rgba(255,255,255,0.5);
 }
 
 #sect1 .sect1-alert{
