@@ -8,6 +8,11 @@
   100%{transform: translateY(0px);}
   }
 
+@keyframes desappear{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 
 /* 시계방향 회전 */
 @keyframes rotateClockwise {

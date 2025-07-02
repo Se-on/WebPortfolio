@@ -17,11 +17,13 @@
   content: '행복하세요~';
   top: 40px;
   left: -25px;
-  width: 80px;
+  width: 70px;
   height: 20px;
   border-radius: 5px;
   text-align: center;
   font-size: 12px;
+  line-height: 12px;
+  padding-top: 10px;
   background-color: var(--mainBlack);
   color: var(--mainWhite);
 }
@@ -43,12 +45,12 @@
 
 #sect1 .pseudo .moon1:hover:after{
   position: absolute;
-  content: '오후 10시 이후의 문의는 받지 않습니다.';
+  content: 'AI를 활용할 것.';
   word-break: keep-all;
-  top: 50px;
-  left: -40px;
-  width: 120px;
-  height: 30px;
+  top: 40px;
+  left: -25px;
+  width: 80px;
+  height: 20px;
   padding-top: 10px;
   border-radius: 5px;
   text-align: center;
@@ -60,8 +62,8 @@
 
 #sect1 .pseudo .star2 img{
   position: absolute;
-  font-size: 32px;
-  width: 45px;
+  width: 40px;
+  height: 40px;
   top: 850px;
   left: 750px;
   color: var(--mainBlack);
@@ -69,18 +71,15 @@
   animation: move 4s alternate infinite;
 }
 
-#sect1 .pseudo .star2:hover{
-  color: var(--mainColor);
-}
-
-#sect1 .pseudo .star2:hover:after{
+.profile .img-box:before{
   position: absolute;
-  content: '--';
-  word-break: keep-all;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 12px;
-  font-size: 12px;
-  background-color: var(--mainBlack);
-  color: var(--mainWhite);
+  content: '\F59C\F59C\F59C';
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  font-weight: 800;
+  top: 0;
+  left: 0;
+  color: var(--mainColor);
+  animation: desappear 2s alternate infinite;
 }

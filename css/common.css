@@ -1,12 +1,13 @@
 *{scroll-behavior: smooth; 
   margin: 0; 
   padding: 0;}
-*::selection{background-color:var(--mainBlack); color:goldenrod;}
+*::selection{background-color:var(--mainBlack); color:var(--mainGold);}
 
 :root{
   --mainColor: #7974D8;
   --mainBlack: #222222;
   --mainWhite: #ffffff;
+  --mainGold: goldenrod;
 }
 
 html{ 
@@ -37,7 +38,7 @@ padding: 0;
 }
 
 a.homepage{
-  width: 120px;
+  width: 130px;
   height: 30px;
   line-height: 30px;
   border: 2px solid var(--mainColor);
@@ -56,7 +57,7 @@ a.homepage:hover{
 }
 
 a.github{
-  width: 120px;
+  width: 130px;
   height: 30px;
   line-height: 30px;
   border: 2px solid var(--mainColor);

@@ -83,8 +83,8 @@
     font-size: 90px;
   }
 
-  .fp-arrow.fp-prev{border-color: transparent goldenrod transparent transparent; left: 3%; top: 350px; translate: 0.5s;}
-  .fp-arrow.fp-next{border-color: transparent transparent transparent goldenrod; right: 3%; top: 350px; translate: 0.5s;}
+  .fp-arrow.fp-prev{border-color: transparent var(--mainGold) transparent transparent; left: 3%; top: 350px; translate: 0.5s;}
+  .fp-arrow.fp-next{border-color: transparent transparent transparent var(--mainGold); right: 3%; top: 350px; translate: 0.5s;}
   .fp-arrow.fp-prev:hover{border-color: transparent var(--mainColor) transparent transparent ;
   }
   .fp-arrow.fp-next:hover{border-color: transparent transparent transparent var(--mainColor);

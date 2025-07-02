@@ -25,7 +25,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
   width: 10px;
   height: 10px;
   border-radius: 0;
-  background-color: goldenrod;
+  background-color: var(--mainGold);
   margin: 0 0 0 -6px;;
 }
 #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{
@@ -50,10 +50,10 @@ h1{font-family: "Stick No Bills", sans-serif !important;
   right: 15%; translate: 0.5s;
 }
 .fp-arrow.fp-prev:hover{
-  border-color: transparent goldenrod transparent transparent ;
+  border-color: transparent var(--mainGold) transparent transparent ;
 }
 .fp-arrow.fp-next:hover{
-  border-color: transparent transparent transparent goldenrod;
+  border-color: transparent transparent transparent var(--mainGold);
 }
 
 /* ------------------------------------------------------ 01 */
@@ -146,6 +146,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
   height: auto;
   left: -70px;
   top: 50px;
+  animation: move 4s alternate infinite;
 }
 
 #sect1 h3{
@@ -650,6 +651,6 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 }
 
 #sect6 address button:hover{
-  background-color: goldenrod;
+  background-color: var(--mainGold);
   color: var(--mainWhite);
 }
