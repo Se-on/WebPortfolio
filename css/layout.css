@@ -177,7 +177,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 #sect2{
   background: url(../img/tile2.png) repeat center/contain rgba(255,255,255,50%);
   position: relative;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 100vh;
   border-bottom: 3px dashed var(--mainColor);
   display: flex;
@@ -205,7 +206,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 .sect2-main .profile-box{
   margin: auto;
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 100vh;
   background-color: var(--mainWhite);
   align-content: center;
@@ -214,6 +216,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 .sect2-main .profile-container{
   display: grid;
   grid-template-columns: 350px 200px 450px;
+  width: 100%;
   height: 600px;
   gap: 150px;
   align-items: flex-start;
@@ -308,7 +311,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 #sect3{
   position: relative;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 100vh;
   border-bottom: 3px dashed var(--mainColor);
   }
@@ -433,7 +437,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 #sect4{
   background: url(../img/tile2.png) repeat center/contain rgba(255,255,255,50%);
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 100vh;
   border-bottom: 3px dashed var(--mainColor);
   display: flex;
@@ -443,7 +448,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 }
 
 #sect4 .sect4-main{
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 100%;
   background-color: var(--mainWhite);
   box-sizing: border-box;
@@ -513,7 +519,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 #sect5{
   position: relative;
-  width: 100vw;
+  width: 100%;
+  max-width: 1900px;
   height: 100vh;
   border-bottom: 2px solid var(--mainColor);
   object-fit: cover;
@@ -522,6 +529,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 #sect5 .sect5-main{
   background-color: var(--mainWhite);
   width: 100%;
+  max-width: 1900px;
   height: 100vh;
   text-align: center;
   background-image: url(../img/app1.jpg);
@@ -628,7 +636,8 @@ h1{font-family: "Stick No Bills", sans-serif !important;
 
 #sect6{
   text-align: center;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 250px;
   background-color: var(--mainColor);
   color: var(--mainWhite);
@@ -648,7 +657,7 @@ h1{font-family: "Stick No Bills", sans-serif !important;
   border-radius: 5px;
   padding: 5px 40px;
   line-height: 30px;
-  margin-top: 10px;
+  margin: 10px 10px;
   cursor: pointer;
   transition: 0.3s;
   font-weight: 500;
